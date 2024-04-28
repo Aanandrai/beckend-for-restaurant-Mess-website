@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const crypto = require('crypto');
 
 
-const db_link='mongodb+srv://admin:sKyZR2IcEB6QRpPN@cluster0.nnewzr1.mongodb.net/?retryWrites=true&w=majority';
+const db_link='mongodb+srv://admin:<password>.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(db_link)
     .then(function(db){
         // console.log(db);
