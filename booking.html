@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe payment demo</title>
+</head>
+<body>
+    <!-- this is static but we have to make it dinamic using given data this is for testing only -->
+    <h3>Welcome to Payment Gateway</h3>
+    <form action="createSession" method="POST"> 
+    <script
+        src="//checkout.stripe.com/v2/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_51OsiHpSIZ7f2GDZwt3BVD7uDODer7TZa4Iw3RPXOn5VB1vE3ElpuEkooMTg05kfUdgimjlm03IstGUxmX5dj0OE800bE6f9Q2i"
+        data-amount="1500"
+        data-currency="inr"
+        data-name="FoodApp"
+        data-description="Buy food plan"
+        data-locale="auto">
+    </script>
+    </form>
+</body>
+</html>
